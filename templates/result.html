@@ -1,0 +1,13 @@
+<html>
+ <head>
+    <title> Apple Review</title>
+ </head>  
+ <body>
+    <h1>FlipKart Reviews</h1>
+    <ul>
+        {% for value in results %}
+        <li>{{value.rating}} , {{value.comment}} , {{value.reviewer}}  </li>
+        {% endfor %}
+    </ul>
+ </body>
+</html>
